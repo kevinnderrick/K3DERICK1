@@ -1,0 +1,84 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "JOJOXD script!", HidePremium = false, SaveConfig = true, ConfigFolder = "JOJOSCRIPT"})
+local Tab = Window:MakeTab({
+	Name = "ADOPT ME",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Notification",
+	Content = "JojoXD on top",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+}) 
+--Slider:Set(2)
+ Tab:AddLabel("Adopt me!")
+--CoolLabel:Set("Wait 5 minute to start trade scam")
+Tab:AddParagraph("Wait 5 minute or 10 to start trade scam","enjoy")
+-- CoolParagraph:Set("Paragraph New!")
+
+Tab:AddTextbox({
+	Name = "player username",
+	Default = "Input",
+	TextDisappear = false,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+Tab:AddToggle({
+	Name = "Trade Scam",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+Tab:AddButton({
+    Name = "LAG SERVER",
+    Callback = function()
+OrionLib:MakeNotification({
+    Name = "Notification",
+    Content = "PLEASE WAIT TO MAKE THE SERVER LAGGY",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+              print("button pressed")
+      end    
+})
+
+--[[
+Name = <string> - This is a Button
+Callback = <function> - 
+]]
+ --Slider:Set(2)
+ Tab:AddLabel("Coming soon")
+--CoolLabel:Set("Coming soon!")
+Tab:AddParagraph("Coming soon","Coming soon")
+-- CoolParagraph:Set("Coming soon")
+
+Tab:AddTextbox({
+	Name = "coming soon",
+	Default = "coming soon",
+	TextDisappear = false,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+Tab:AddButton({
+    Name = "Coming Soon",
+    Callback = function()
+OrionLib:MakeNotification({
+    Name = "Notification",
+    Content = "coming soon",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+              print("coming soon")
+      end    
+})
+
+--[[
+Name = <string> - This is a Button
+Callback = <function> - 
+]]
+OrionLib:Init()
+-- destroying the interface: OrionLib:Destroy()
